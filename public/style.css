@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(#E7E8F2, #BEC0D5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+#app {
+    height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 10px -5px;
+    width: 50%;
+    min-width: 400px;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+}
+
+#content {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #02030B;
+    font-size: 24px;
+    padding: 10px;
+    flex: 4;
+}
+
+#add {
+    background: #7983EC;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;    
+    outline: none;
+    flex: 1;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 20px 0;
+    display: flex;
+}
+
+label {
+    flex: 4;
+    
+}
+
+.trash {
+    flex: 1;
+    text-align: center;
+    color: #7983EC;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #7983EC;
+
+}
+.list-wrap {
+    margin-top: 10px;
+    overflow: auto;
+    max-height: 350px;
+}
+@media (min-width: 1000px) {
+    #app {
+        max-width: 500px;
+    }
+}
